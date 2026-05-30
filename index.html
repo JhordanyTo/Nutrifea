@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Anemia — Proyecto Escolar</title>
+  <title>NUTRIFEA</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
 </head>
@@ -12,9 +12,12 @@
 <!-- HEADER -->
 <header>
   <div class="globulos-deco">🩸</div>
-  <div class="etiqueta">Proyecto Escolar — Salud</div>
-  <h1>La Anemia</h1>
-  <p>Todo lo que debes saber sobre una de las enfermedades más comunes en el Perú y el mundo</p>
+  <div class="etiqueta">Salud</div> 
+  <h1>NUTRIFEA</h1> 
+  <p>
+    Aprende a identificar, prevenir y combatir la anemia, una enfermedad que afecta 
+    a millones de niños y adultos en el Perú y el mundo.
+  </p>
 </header>
 
 <!-- NAV -->
@@ -44,13 +47,13 @@
         </div>
       </div>
       <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/KbDMDgMRrKo"
-          title="Video sobre la anemia"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+
+        <!-- VIDEO -->
+        <video id="videoLocal" controls style=" width:100%; border-radius:18px;">
+          <source src="./Video.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
       </div>
     </div>
   </div>
@@ -298,49 +301,69 @@
       <p class="seccion-titulo">Cómo <span>prevenirla</span></p>
       <div class="linea-titulo"></div>
     </div>
+
     <div class="prevencion-grid reveal">
+
       <div class="prev-card">
         <span class="emoji">🥗</span>
         <div>
           <h4>Dieta balanceada</h4>
-          <p>Incluye carnes, legumbres, verduras de hoja verde y frutas cítricas en tus comidas diarias.</p>
+          <p>
+            Consumir alimentos ricos en hierro como carnes, lentejas, espinaca y sangrecita ayuda a producir más hemoglobina y prevenir la anemia.
+          </p>
         </div>
       </div>
+
       <div class="prev-card">
         <span class="emoji">💊</span>
         <div>
           <h4>Suplementos de hierro</h4>
-          <p>El médico puede indicar suplementos especialmente en embarazadas, niños pequeños y adolescentes.</p>
+          <p>
+            En algunos casos, los médicos recomiendan suplementos de hierro para evitar la deficiencia, especialmente en niños y embarazadas.
+          </p>
         </div>
       </div>
+
       <div class="prev-card">
         <span class="emoji">🩺</span>
         <div>
           <h4>Controles médicos</h4>
-          <p>Realizarse un hemograma al menos una vez al año permite detectar la anemia a tiempo.</p>
+          <p>
+            Los chequeos médicos y análisis de sangre permiten detectar la anemia tempranamente y comenzar el tratamiento adecuado.
+          </p>
         </div>
       </div>
+
       <div class="prev-card">
         <span class="emoji">🪱</span>
         <div>
           <h4>Desparasitación</h4>
-          <p>Los parásitos intestinales consumen el hierro del cuerpo. El tratamiento periódico es clave.</p>
+          <p>
+            Eliminar parásitos intestinales ayuda a que el cuerpo absorba mejor los nutrientes y evita la pérdida de hierro.
+          </p>
         </div>
       </div>
+
       <div class="prev-card">
         <span class="emoji">🫧</span>
         <div>
           <h4>Higiene y saneamiento</h4>
-          <p>Lavado de manos, agua potable y manejo adecuado de alimentos previenen infecciones que causan anemia.</p>
+          <p>
+            Mantener una buena higiene, tomar agua segura y lavar bien los alimentos reduce infecciones relacionadas con la anemia.
+          </p>
         </div>
       </div>
+
       <div class="prev-card">
         <span class="emoji">🍊</span>
         <div>
           <h4>Vitamina C con las comidas</h4>
-          <p>Comer frutas cítricas junto a los alimentos con hierro multiplica la absorción del mineral.</p>
+          <p>
+            Consumir naranja, limón o mandarina junto con alimentos ricos en hierro mejora la absorción del mineral en el organismo.
+          </p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -400,9 +423,9 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <strong>Proyecto Escolar — La Anemia</strong>
+    <strong>NUTRIFEA</strong>
     Elaborado por estudiantes de 5.° de Secundaria &nbsp;|&nbsp; Santa Rosa - Trujillo, Perú &nbsp;|&nbsp; 2026
-    <p style="margin-top:0.4rem; font-size:0.8rem; opacity:0.6;">Fuentes: OMS · MINSA Perú · Mayo Clinic · Manual MSD</p>
+    <p style="margin-top:0.4rem; font-size:0.8rem; opacity:0.6;">Fuentes: OMS · MINSA Perú  · Manual MSD</p>
   </div>
 </footer>
 
