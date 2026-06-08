@@ -29,13 +29,13 @@ body {
   background: #fff9f6;
   color: var(--texto);
   overflow-x: hidden;
+  padding-top: 58px;
 }
 
 /* ===== HEADER ===== */
 header {
-  /* hero de pantalla completa con fondo fijo para efecto de scroll hacia arriba */
   background: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.18)), url("../imagenes/banner.png") center center/cover no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: white;
   text-align: center;
   padding: 4rem var(--px) 5rem;
@@ -582,12 +582,16 @@ footer p { margin-top: 0.4rem; font-size: 0.8rem; opacity: 0.6; }
 
 /* ===== LAYOUT MULTIPAGINA ===== */
 .site-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  box-shadow: 0 8px 20px rgba(44,44,42,0.16);
 }
 .brand {
   font-family: 'Fredoka One', cursive;
@@ -1542,6 +1546,9 @@ main {
 
 /* Tablets */
 @media (max-width: 900px) {
+  body {
+    padding-top: 98px;
+  }
   .intro-grid { grid-template-columns: 1fr; }
   .video-container { max-width: 100%; }
   header { background-attachment: scroll; background-position: center top; }
@@ -1580,6 +1587,9 @@ main {
 
 /* Móvil */
 @media (max-width: 600px) {
+  body {
+    padding-top: 118px;
+  }
   header {
     min-height: 80vh;
     padding: 2rem var(--px) 3rem;
